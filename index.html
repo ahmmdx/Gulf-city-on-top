@@ -28,8 +28,8 @@ header{position:fixed;top:0;right:0;width:100%;height:82px;padding:0 7%;display:
 <div id="militaryModal" class="modal"><div class="modal-box"><button class="close" onclick="closeModal('militaryModal')">×</button><h3>تقديم القطاع العسكري</h3><p>سيتم إرسال معلوماتك إلى الإدارة للمراجعة.</p><form id="militaryForm"><div class="group"><label>آيدي ديسكورد</label><input id="mDiscord" required></div><div class="group"><label>الاسم</label><input id="mName" required></div><div class="group"><label>العمر</label><input id="mAge" type="number" min="1" required></div><div class="group"><label>الرتبة المطلوبة</label><select id="mRank" required><option value="">اختر الرتبة</option><option>جندي</option><option>عريف</option><option>وكيل رقيب</option><option>رقيب</option></select></div><div class="group"><label>لماذا تريد الانضمام؟</label><textarea id="mReason" required></textarea></div><button class="card-btn" id="mSubmit">إرسال التقديم</button></form></div></div>
 <div class="toast" id="toast"></div>
 <script>
-const ADMIN_WEBHOOK='ضع-رابط-ويبهوك-الإدارة-هنا';
-const MILITARY_WEBHOOK='ضع-رابط-ويبهوك-العسكري-هنا';
+const ADMIN_WEBHOOK='https://discord.com/channels/1156591311693021214/1489011513036505309';
+const MILITARY_WEBHOOK='https://discord.com/channels/1482539221666238464/1491154129739972628';
 const DISCORD_URL='#';
 document.getElementById('discordLink').href=DISCORD_URL;
 const rules=['يمنع القتل العشوائي (RDM) أو استخدام المركبات للدهس العشوائي (VDM).','يجب الحفاظ على حياتك والتصرف بشكل واقعي داخل جميع السيناريوهات.','يمنع الخروج عن الرول بلاي أو تخريب متعة اللاعبين الآخرين.','يجب التعاون الكامل مع الإدارة والالتزام بتعليماتهم.','الاحترام المتبادل بين جميع أعضاء المجتمع أمر إلزامي.'];
